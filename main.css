@@ -1,5 +1,5 @@
 
-@media only screen and (min-width: 480px) {
+@media only screen and (min-width: 480px ) {
  body { 
   background: url(mobile_photo.jpg);
   
@@ -13,11 +13,7 @@
 .fade{
   zoom:1.65;
 }
-.row{
 
-  width: 100%;
-   
-}
 #table_or_button{
   background-color: white;
   opacity: 0.6;
@@ -132,7 +128,9 @@ body {
   background-size: 100%; /* modern brausers*/
   font-size: 40px;
 }
-
+#Messages{
+  color:black;
+}
 .buttons{
   
   background-color: white;

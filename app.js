@@ -46,6 +46,7 @@ var url="work.json";
 										document.getElementById('table_or_button').style.backgroundColor= 'black';
 										 document.getElementById('table_or_button').style.opacity= 0.6;
 									}
+
 									
 									
 									for(var i=0;i<data.arr.length;i++)
@@ -55,7 +56,7 @@ var url="work.json";
 													var topic=Elem.newElem('p', { id:'topic'+i, onclick:'click', style:'cursor:pointer', value:'ghbdtn','data-toggle':"modal", 'data-target':'#myModal'});
 													var mess=Elem.newElem('p', {id:'message'+i, onclick:'click', style:'cursor:pointer','data-toggle':"modal", 'data-target':'#myModal' });
 													var time=Elem.newElem('p', {id:'time'+i, onclick:'click', style:'cursor:pointer','data-toggle':"modal", 'data-target':'#myModal'});
-													var str=Elem.newElem('tr',{id:'tr'+i, style:'border-bottom:1px solid #fff; color:white;'});
+													var str=Elem.newElem('tr',{id:'tr'+i, style:'border-bottom:1px solid #fff;'});
 													str.innerHTML='<td></td><td></td><td></td><td></td><td></td><td class="hidden-md hidden-lg"  style="padding-left: 10%;""></td>';
 													
 													nam.innerHTML=data.arr[i].from;
