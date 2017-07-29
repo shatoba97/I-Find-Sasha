@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html> 
+    <head>
+        <title> Messanger </title>
+        <!--<script src="info.js"> </script> база с откуда берем данные (json)-->
+        <link rel="stylesheet" href="main.css" type="text/css">
+        <script type="text/javascript" src="app.js"></script>
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/react/0.14.0/react.js"></script>
+        <script id="test" type="application/json" src="http:/myresources/stuf.json">
+        </script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/react/0.14.0/react-dom.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.6.15/browser.js"></script>
+        
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8"><!--Backgroung tune-->
+    </head>
+    <body>
+        <header><strong class="head">&ensp;HAROLD HIDES MESSENGER&ensp;</strong></header>
+        <div class="form-search">
+          <div>
+              <input style="margin-left: 0%; height: 20%; width: 70%;font-size: 35px;" type="text" id="Inputserch" style="width: 80%">
+              
+              <button style="height: 0%; width: 140px; font-size: 35px;" type="submit" id="buttun" >Search</button>
+          </div>
+        </div>
+
+            <!--<div class="glyphs">
+              <button>Спам</button>
+              <button><i class="glyphicon glyphicon-trash"></i></button>
+            </div>-->
+      <div id="includedContent"></div>
+        <div class="row">
+        
+            <div class= "col-md-2 col-xs-11" id="table_or_button">
+                <div class="buttons" >
+                  <button type="button" class="btn btn-link btn-sidebar big"><strong>Входящие сообщения</strong></button>
+                  <button type="button" class="btn btn-link btn-sidebar big"><strong>Отправленные сообщения</strong></button>
+                  <button type="button" class="btn btn-link btn-sidebar big"><strong>Удаленные сообщения</strong></button>
+                  <button type="button" class="btn btn-link btn-sidebar big"><strong>Спам</strong></button>
+                  <button type="button" class="accordion btn btn-link btn-sidebar for"><strong><span class="caret"></span> Сортировка сообщений</strong></button>
+                  <div class="panel" >
+                    <form class="in">
+                        <div style="color: #337ab7; font-size: 10pt"><input class="ch" type="checkbox" name="option1" value="a1">&nbsp;<strong class="st">Прочитано</strong></div>
+                        <div style="color: #337ab7; font-size: 10pt"><input class="ch" type="checkbox" name="option2" value="a2">&nbsp;<strong class="st">Прикреплены файлы</strong></div>
+                    </form><br>
+                    <div style="text-align: center">
+                      <strong>По дате:</strong>
+                      <form role="form">
+                          <input type="date" class="form-control" id="exampleInputdate" ><br>
+                      </form>
+                      <strong>По ключевому слову:</strong>
+                      <form>
+                        <input type="word" class="form-control" id="exampleInputword" placeholder="Ключевое слово"><br>
+                      </form>
+                      <strong>По отправителю:</strong>
+                      <form>
+                        <input type="sender" class="form-control" id="exampleInputsender" placeholder="Введите отправителя"><br>
+                      </form>
+                      <strong>По теме письма:</strong>
+                      <form>
+                        <input type="theme" class="form-control" id="exampleInputtheme" placeholder="Введите тему письма"><br>
+                      </form>
+                    </div>
+                    <button type="submit" class="btn for" style="width: 100%"><strong>Сортировать</strong></button><br><br>    
+                  </div> 
+                </div>
+            </div>
+            <div class= "col-md-10">
+                <div class= "col-md-12" style="margin-left: 2%">
+                    <table class="table table-bordered table-hover hidden-sm hidden-xs">
+                        <thead>
+                            <tr class="hidden-sm hidden-xs">
+                                <th style="width: 10px;"></th>
+                                <th>От кого</th>
+                                <th>Тема письма</th>
+                                <th>Письмо</th>
+                                <th>Дата</th>
+                            </tr>
+                        </thead>
+                        <tbody id="Messages">
+                          <script type="text/javascript"> $(".big").click( function(){
+                              if(window.screen.width>992)
+                                Allthis(0);
+                              else
+                                Allthis(1);
+                            });</script>
+                          
+                          
+                                
+                             
+                              
+                        </tbody>
+                    </table>
+                </div>    
+            </div>
+         
+        </div>
+
+                <!--<div id="clone">
+                <div class="row hidden-md hidden-lg mobile" style="margin: 1%; width:100%; margin-left:0%" id="first">     
+                  <div class= "col-xs-11"  >
+                  
+                          <div class="butt" id="table_or_button">
+                            
+                            <button type="button" class=" btn btn-link btn-sidebar btn_mobile" id="Input"><strong style="font-size: 40px;">Входящие сообщения</strong></button>
+                            <button type="button" class="btn btn-link btn-sidebar btn_mobile" id="Output"><strong style="font-size: 40px;">Отправленные сообщения</strong></button>
+                            <button type="button" class="btn btn-link btn-sidebar btn_mobile" id="Del"><strong style="font-size: 40px;">Удаленные сообщения</strong></button>
+                            <button type="button" class="btn btn-link btn-sidebar btn_mobile" id="Spam"><strong style="font-size: 40px;">Спам</strong></button>
+                            <button type="button" class="accordion btn btn-link btn-sidebar btn_mobile" ><strong style="font-size: 40px;"><span class="caret"></span> Сортировка сообщений</strong></button>
+                          
+                            <div class="panel" >
+                              
+                                  <div style="color: #337ab7"><input style="zoom:3" type="checkbox" name="option1" value="a1" ><strong style="font-size: 40px">
+                                  Прочитано</strong></div>
+                                  <div style="color: #337ab7"><input style="zoom:3" type="checkbox" name="option2" value="a2" ><strong style="font-size: 40px">Прикреплены файлы</strong></div>
+                              <br><br>
+                              <div style="text-align: center; font-size: 50px">
+                                <strong>По дате:</strong>
+                                <form role="form" >
+                                    <input style="height: 60px; font-size: 40px;" type="date" class="form-control" id="exampleInputdate" placeholder="Введите дату"><br>
+                                </form>
+                                <strong>По ключевому слову:</strong>
+                                <form  >
+                                  <input style="height: 60px; font-size: 40px;" type="word" class="form-control" id="exampleInputword" placeholder="Ключевое слово"><br>
+                                </form>
+                                <strong>По отправителю:</strong>
+                                <form  >
+                                  <input style="height: 60px; font-size: 40px;" type="sender" class="form-control" id="exampleInputsender" placeholder="Введите отправителя"><br>
+                                </form>
+                                <strong>По теме письма:</strong>
+                                <form >
+                                  <input style="height: 60px; font-size: 40px;" type="theme" class="form-control" id="exampleInputtheme" placeholder="Введите тему письма"><br>
+                                </form>
+                              </div><br>
+                              <button type="submit" class="btn" style="width: 100%; font-size: 40px"><strong>Сортировать</strong></button><br><br>    
+                            </div>
+                             
+                          </div>
+                          
+
+                          
+                  </div>
+                  </div>
+                  </div>-->
+                  <script> 
+                              $(function() {
+                                $("#includedContent").load("modal.html"); 
+                              }); 
+                          </script>
+                  <script type="text/javascript">
+                    var a = document.getElementsByClassName("btn_mobile");
+                    $("#Input").click( function() {console.log("help me");Allthis(1);});
+                  </script>
+
+
+                  
+                  <script>
+                    var acc = document.getElementsByClassName("accordion");
+                    var i;
+                    for (i = 0; i < acc.length; i++) {
+                      acc[i].onclick = function() {
+                        this.classList.toggle("active");
+                        var panel = this.nextElementSibling;
+                        if (panel.style.maxHeight){
+                          panel.style.maxHeight = null;
+                        } else {
+                          panel.style.maxHeight = panel.scrollHeight + "px";
+                        } 
+                      }
+                    }
+                  </script>
+            
+        <!--<script type="text/babel" src="modal.js"></script>-->
+
+    </body>
+</html>

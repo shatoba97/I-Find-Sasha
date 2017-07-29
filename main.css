@@ -1,0 +1,240 @@
+
+@media only screen and (min-width: 480px) {
+ body { 
+  background: url(mobile_photo.jpg);
+  
+  background-attachment: fixed !important;
+  -moz-background-size: 100%; /* Firefox 3.6+ */
+  -webkit-background-size: 100%; /* Safari 3.1+ и Chrome 4.0+ */
+  -o-background-size: 100%; /* Opera 9.6+ */
+  background-size: 100%; /* modern brausers*/
+  font-size: 40px;
+}
+.fade{
+  zoom:1.65;
+}
+.row{
+
+  width: 100%;
+   
+}
+#table_or_button{
+  background-color: white;
+  opacity: 0.8;
+  height: 100%;
+  width: 101.5%;
+  font-family: Comic;
+  overflow-y: auto;
+  margin-left: 0%;
+  
+}
+button.big, button.for{
+  font-size: 60px;
+
+}
+.btn-lg{
+  width: 100%;
+  opacity: 0;
+  background-color: white;
+  height: 100%;
+  outline: 0 !important;
+  border: 0;
+
+}
+ .form-search{
+  margin-left: 15%;
+  margin-top: -10px;
+}
+
+
+
+.btn-sidebar{
+  width: 100%;
+  text-align: center;
+  font-size: 50px;
+}
+
+.btn-width{
+  width: 100%;
+}
+strong.head{
+  font-size: 70px;
+}
+
+
+header{
+  font-family: "Comic Sans MS";
+  font-style: oblique;
+  font-size: 200%;
+  margin-left: 15%;
+  color: white;
+  opacity: 1;
+  /*background-color: rgba(255,255,255,0.5);*/
+  text-align: center;
+  }
+
+  .table{
+    text-align: left;
+  }
+  .tablekey{
+    color:  skyblue;
+    text-indent: 1em;
+    font-size: 230%;
+  }
+
+button.accordion {
+    cursor: pointer;
+    padding: 10px;
+    width: 100%;
+    border: none;
+    outline: none;
+    
+    transition: 0.4s;
+}
+
+button.accordion.active, button.accordion:hover {
+    background-color: #e6e6ff;
+}
+#mobail{
+  height: 100%
+}
+div.panel {
+    padding: 0 10px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    color: #337ab7;
+    text-align: left;
+    font-size: 40px;
+}
+
+
+form{
+  zoom: 2;
+}
+}
+
+
+
+
+
+ 
+@media only screen and (min-width: 992px) {
+ 
+body { 
+  background: url(image.jpg);
+  
+  background-attachment: fixed !important;
+  -moz-background-size: 100%; /* Firefox 3.6+ */
+  -webkit-background-size: 100%; /* Safari 3.1+ и Chrome 4.0+ */
+  -o-background-size: 100%; /* Opera 9.6+ */
+  background-size: 100%; /* modern brausers*/
+  font-size: 40px;
+}
+
+.buttons{
+  
+  background-color: white;
+  height: 100%;
+  width: 130%;
+  font-family: Comic;
+  overflow-y: auto;
+}
+html{
+  overflow-x: hidden;
+}
+button.big{
+  font-size: 20px;
+
+}
+.btn-lg{
+  width: 100%;
+  opacity: 0;
+  background-color: white;
+  height: 100%;
+  outline: 0 !important;
+  border: 0;
+
+}
+.btn_mobile{
+  font-size: 60px;
+}
+.mobile{
+
+  background-color: white;
+  height: 100% !important;
+  width: 100%;
+  font-family: Comic;
+  overflow-y: auto;
+}
+
+
+.form-search{
+  margin-left: 15%;
+  margin-top: -10px;
+}
+
+
+
+.btn-sidebar{
+  width: 100%;
+  text-align: center;
+  font-size: 50px;
+}
+
+.btn-width{
+  width: 100%;
+}
+strong.head{
+  font-size: 70px;
+}
+
+
+header{
+  font-family: "Comic Sans MS";
+  font-style: oblique;
+  font-size: 200%;
+  margin: 1%;
+  color: darkblue;
+  background-color: rgba(255,255,255,0.5);
+  text-align: center;
+  }
+
+  .table{
+    text-align: left;
+  }
+  .tablekey{
+    color:  skyblue;
+    text-indent: 1em;
+    font-size: 230%;
+  }
+
+button.accordion {
+    cursor: pointer;
+    padding: 10px;
+    width: 100%;
+    border: none;
+    outline: none;
+    font-size: 20px;
+    transition: 0.4s;
+}
+
+button.accordion.active, button.accordion:hover {
+    background-color: #e6e6ff;
+}
+#mobail{
+  height: 100%
+}
+div.panel {
+    padding: 0 10px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    font-size: 20px;
+    color: #337ab7;
+    text-align: left;
+}
+ 
+}
