@@ -37,12 +37,14 @@ var url="work.json";
 										}
 
 									};
-									var global=Elem.newElem("table",{id:'tab', style:'font-size:40px'});
+									var global=Elem.newElem("table",{id:'tab', style:'font-size:40px', width:'100%'});
 									if(check==1)
 									{
 										document.getElementById("table_or_button").innerHTML = "";
 										var button =Elem.newElem('input', {type:'button', id:'Menu', style:'font-size:40px', value:'Menu'});
 										document.getElementById("includedContent").appendChild(button);
+										document.getElementById('table_or_button').style.backgroundColor= 'black';
+										 document.getElementById('table_or_button').style.opacity= 0.6;
 									}
 									
 									
@@ -53,8 +55,8 @@ var url="work.json";
 													var topic=Elem.newElem('p', { id:'topic'+i, onclick:'click', style:'cursor:pointer', value:'ghbdtn','data-toggle':"modal", 'data-target':'#myModal'});
 													var mess=Elem.newElem('p', {id:'message'+i, onclick:'click', style:'cursor:pointer','data-toggle':"modal", 'data-target':'#myModal' });
 													var time=Elem.newElem('p', {id:'time'+i, onclick:'click', style:'cursor:pointer','data-toggle':"modal", 'data-target':'#myModal'});
-													var str=Elem.newElem('tr',{id:'tr'+i, style:'border-bottom:1px solid #fff; color:white'});
-													str.innerHTML='<td></td><td></td><td></td><td></td><td></td><td class="hidden-md hidden-lg"></td>';
+													var str=Elem.newElem('tr',{id:'tr'+i, style:'border-bottom:1px solid #fff; color:white;'});
+													str.innerHTML='<td></td><td></td><td></td><td></td><td></td><td class="hidden-md hidden-lg"  style="padding-left: 10%;""></td>';
 													
 													nam.innerHTML=data.arr[i].from;
 													topic.innerHTML=data.arr[i].subject;
