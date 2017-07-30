@@ -43,11 +43,9 @@ var url="work.json";
 										document.getElementById("table_or_button").innerHTML = "";
 										var button =Elem.newElem('input', {type:'button', id:'Menu', style:'font-size:40px', value:'Menu'});
 										document.getElementById("includedContent").appendChild(button);
-										document.getElementById('table_or_button').style.backgroundColor= 'black';
-										 document.getElementById('table_or_button').style.opacity= 0.6;
+										document.getElementById('table_or_button').style.backgroundColor= 'rgba(0,0,0,0.3)';
+										document.getElementById('table_or_button').style.color= 'white';
 									}
-
-									
 									
 									for(var i=0;i<data.arr.length;i++)
 												{

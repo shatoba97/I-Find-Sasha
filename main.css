@@ -1,5 +1,5 @@
 
-@media only screen and (min-width: 480px ) {
+@media only screen and (max-width: 991px ) {
  body { 
   background: url(mobile_photo.jpg);
   
@@ -15,19 +15,20 @@
 }
 
 #table_or_button{
-  background-color: white;
-  opacity: 0.6;
   height: 100%;
-  width: 101.5%;
+  width: 97.5%;
   font-family: Comic;
   overflow-y: auto;
-  margin-left: 0%;
+  margin-left: 2%;
+  background-color: rgba(255,255,255,0.5);
   
 }
 button.big, button.for{
   font-size: 60px;
+  text-align: center;
 
 }
+
 .btn-lg{
   width: 100%;
   opacity: 0;
@@ -53,30 +54,26 @@ button.big, button.for{
 .btn-width{
   width: 100%;
 }
-strong.head{
-  font-size: 70px;
+strong{
+  font-size: 50px;
 }
 
 
 header{
   font-family: "Comic Sans MS";
   font-style: oblique;
-  font-size: 200%;
-  margin-left: 15%;
+  font-size: 70px;
+  margin-left: 5%;
   color: white;
-  opacity: 1;
-  /*background-color: rgba(255,255,255,0.5);*/
+  font-style: oblique;
+  background-color: rgba(255,255,255,0.1);
   text-align: center;
   }
 
   .table{
     text-align: left;
   }
-  .tablekey{
-    color:  skyblue;
-    text-indent: 1em;
-    font-size: 230%;
-  }
+
 
 button.accordion {
     cursor: pointer;
@@ -89,7 +86,13 @@ button.accordion {
 }
 
 button.accordion.active, button.accordion:hover {
-    background-color: #e6e6ff;
+    background-color: rgba(255,255,255,0.5);
+}
+button.for{
+  font-size: 20px;
+}
+.end{
+  margin-left: 33%;
 }
 #mobail{
   height: 100%
@@ -102,12 +105,12 @@ div.panel {
     transition: max-height 0.2s ease-out;
     color: #337ab7;
     text-align: left;
-    font-size: 40px;
+    
 }
 
 
-form{
-  zoom: 2;
+.ch, .form-control{
+  zoom:3.35;
 }
 }
 
@@ -126,16 +129,24 @@ body {
   -webkit-background-size: 100%; /* Safari 3.1+ и Chrome 4.0+ */
   -o-background-size: 100%; /* Opera 9.6+ */
   background-size: 100%; /* modern brausers*/
-  font-size: 40px;
 }
 #Messages{
   color:black;
+}
+#table_or_button{
+  background-color: white;
+  opacity: 0.8;
+  width: 25%;
+  font-family: Comic;
+  overflow-y: auto;
+  margin-left: 0%;
+  
 }
 .buttons{
   
   background-color: white;
   height: 100%;
-  width: 130%;
+  width: 100%;
   font-family: Comic;
   overflow-y: auto;
 }
@@ -155,18 +166,6 @@ button.big{
   border: 0;
 
 }
-.btn_mobile{
-  font-size: 60px;
-}
-.mobile{
-
-  background-color: white;
-  height: 100% !important;
-  width: 100%;
-  font-family: Comic;
-  overflow-y: auto;
-}
-
 
 .form-search{
   margin-left: 15%;
@@ -178,21 +177,12 @@ button.big{
 .btn-sidebar{
   width: 100%;
   text-align: center;
-  font-size: 50px;
 }
-
-.btn-width{
-  width: 100%;
-}
-strong.head{
-  font-size: 70px;
-}
-
 
 header{
   font-family: "Comic Sans MS";
   font-style: oblique;
-  font-size: 200%;
+  font-size: 70px;
   margin: 1%;
   color: darkblue;
   background-color: rgba(255,255,255,0.5);
@@ -202,11 +192,7 @@ header{
   .table{
     text-align: left;
   }
-  .tablekey{
-    color:  skyblue;
-    text-indent: 1em;
-    font-size: 230%;
-  }
+
 
 button.accordion {
     cursor: pointer;
@@ -214,16 +200,19 @@ button.accordion {
     width: 100%;
     border: none;
     outline: none;
-    font-size: 20px;
     transition: 0.4s;
 }
 
 button.accordion.active, button.accordion:hover {
     background-color: #e6e6ff;
 }
-#mobail{
-  height: 100%
+button.for{
+  font-size: 20px;
 }
+.end{
+  margin-left: 20%;
+}
+
 div.panel {
     padding: 0 10px;
     background-color: white;
@@ -233,6 +222,9 @@ div.panel {
     font-size: 20px;
     color: #337ab7;
     text-align: left;
+}
+.ch, .form-control{
+  zoom:1.35;
 }
  
 }

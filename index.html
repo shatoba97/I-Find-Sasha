@@ -33,7 +33,7 @@
       <div id="includedContent"></div>
         <div class="row">
         
-            <div class= "col-md-2 col-xs-2 col-lg-2 col-sm-2" id="table_or_button">
+            <div class= "col-md-2 col-xs-11 col-lg-2 col-sm-2" id="table_or_button">
                 <div class="buttons" >
                   <button type="button" class="btn btn-link btn-sidebar big"><strong>Входящие сообщения</strong></button>
                   <button type="button" class="btn btn-link btn-sidebar big"><strong>Отправленные сообщения</strong></button>
@@ -42,13 +42,14 @@
                   <button type="button" class="accordion btn btn-link btn-sidebar for"><strong><span class="caret"></span> Сортировка сообщений</strong></button>
                   <div class="panel" >
                     <form class="in">
-                        <div style="color: #337ab7; font-size: 10pt"><input class="ch" type="checkbox" name="option1" value="a1">&nbsp;<strong class="st">Прочитано</strong></div>
-                        <div style="color: #337ab7; font-size: 10pt"><input class="ch" type="checkbox" name="option2" value="a2">&nbsp;<strong class="st">Прикреплены файлы</strong></div>
+                        <div style="color: #337ab7;"><input class="ch" type="checkbox" name="option1" value="a1">&nbsp;<strong class="st">Прочитано</strong></div>
+                        <div style="color: #337ab7;"><input class="ch" type="checkbox" name="option2" value="a2">&nbsp;<strong class="st">Прикреплены файлы</strong></div>
+
                     </form><br>
                     <div style="text-align: center">
                       <strong>По дате:</strong>
                       <form role="form">
-                          <input type="date" class="form-control" id="exampleInputdate" ><br>
+                          <input type="date" class="form-control e" id="exampleInputdate" ><br>
                       </form>
                       <strong>По ключевому слову:</strong>
                       <form>
@@ -63,12 +64,12 @@
                         <input type="theme" class="form-control" id="exampleInputtheme" placeholder="Введите тему письма"><br>
                       </form>
                     </div>
-                    <button type="submit" class="btn for" style="width: 100%"><strong>Сортировать</strong></button><br><br>    
+                    <button type="submit" class="btn for end"><strong>Сортировать</strong></button><br><br>    
                   </div> 
                 </div>
             </div>
-            <div class= "col-md-10">
-                <div class= "col-md-12" style="margin-left: 2%">
+            <div class= "col-md-9 col-sm-9">
+                <div  style="margin-left: 2%">
                     <table class="table table-bordered table-hover hidden-sm hidden-xs">
                         <thead>
                             <tr class="hidden-sm hidden-xs">
@@ -97,7 +98,7 @@
                               }); 
                           </script>
                   <script type="text/javascript">
-                    var a = document.getElementsByClassName("btn_mobile");
+                    
                     $("#Input").click( function() {console.log("help me");Allthis(1);});
                   </script>
 
